@@ -16,17 +16,6 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "video_Aqe49E": {
-            "type": "video",
-            "settings": {
-              "video": "shopify://files/videos/Keyflow Work Footer.webm"
-            }
-          }
-        },
-        "block_order": [
-          "video_Aqe49E"
-        ],
         "settings": {
           "url_about_us": "",
           "url_get_in_touch": "",

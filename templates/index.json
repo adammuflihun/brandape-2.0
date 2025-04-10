@@ -15,17 +15,6 @@
     },
     "home_02": {
       "type": "home_02",
-      "blocks": {
-        "video_4VjzdQ": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/about-vp9-chrome.webm"
-          }
-        }
-      },
-      "block_order": [
-        "video_4VjzdQ"
-      ],
       "settings": {
         "url_button": ""
       }
@@ -51,12 +40,6 @@
     "home_06": {
       "type": "home_06",
       "blocks": {
-        "video_C3Lx8V": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/testimonials-vp9-chrome.webm"
-          }
-        },
         "slider_WEpQLF": {
           "type": "slider",
           "settings": {
@@ -67,7 +50,6 @@
         }
       },
       "block_order": [
-        "video_C3Lx8V",
         "slider_WEpQLF"
       ],
       "settings": {}
