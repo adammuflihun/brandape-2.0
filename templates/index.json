@@ -33,7 +33,7 @@
     "home_03": {
       "type": "home_03",
       "settings": {
-        "url_button_link": "",
+        "url_button_link": "shopify://collections/domains-for-sale",
         "text_button_text": "",
         "collection_collection": "domains-for-sale",
         "collection_collection_limit": 6,
