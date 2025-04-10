@@ -1,9 +1,17 @@
 <div class="ba_container-large is_relative"><div class="product_component"><div id="w-node-_2e11e185-e61e-aeb3-1de6-03058384cef6-f2238cbe" class="product_heading-wrapper-2"><div class="product_heading-2"><h2 class="heading-style-h2-2 align-center text-align-center"><span class="span_gradient">Featured </span>Domains</h2><div class="divider_gradient"></div><p class="ba_text-size-regular sub-text">Browse Some of Our Exclusive Domains</p></div><div class="product_button-row hide-mobile-landscape hide"><a href="{{ section.settings.url_button_link }}" class="ba_button w-button"> {{ section.settings.text_button_text }} </a>
-</div></div><div class="product_list-wrapper w-dyn-list"><div role="list" class="product_list-2 w-dyn-items">{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
-<div role="listitem" class="product_list-item w-dyn-item">
+</div></div><div class="product_list-wrapper w-dyn-list"><div role="list" class="ba_product_grid w-dyn-items">{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
+<div role="listitem" class="ba_product_list-item w-dyn-item">
     
-    {% render 'product_item', product: product %}
-
+    <div class="ba_featured_domain"><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
+<div li-element="product-variant-container" class="product-item_component-2" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><a li-object:href="product.url" href="{{ product.url }}" class="wrap-gradient_product w-inline-block"><div class="wrapper_product"><div class="product-item_text-link"><div class="product-item_left"><div li-object="product.vendor" class="text-size-small hide">{{ product.vendor }}</div><div li-object="product.title" class="ba_heading-style-h4 text-weight-bold">{{ product.title }}</div></div><div class="product-item_price hide">{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
+    <div li-object="product.compare_at_price | money" class="text-size-regular-3 text-style-strikethrough text-style-muted">{{ product.compare_at_price | money }}</div>    </div>
+{% endif %}<div li-object="product.price | money" class="text-size-regular-3">{{ product.price | money }}</div></div></div><div class="product-item_image-link-2"><div class="product-item_image-wrapper hide"><img li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" class="product-item_image-2">
+</div><div class="product-item_tag_list-2">{% unless product.available %}    <div li-unless="product.available" class="ba_priduct_tag_soldout">
+    Not in Stock    </div>
+{% endunless %}{% if product.available %}    <div li-if="product.available" class="ba_priduct_tag_soldout is-red">
+    For sale    </div>
+{% endif %}</div></div></div></a><img loading="lazy" src="{{ 'DomainApe-Brandmark-2_1DomainApe-Brandmark-2.webp' | asset_url }}" alt="" class="product_logo">
+</div></div>
     
 </div>
 {% endfor %}
