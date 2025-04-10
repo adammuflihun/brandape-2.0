@@ -1,0 +1,15 @@
+<script>
+  window.InstaBuy = window.InstaBuy || {};
+  window.InstaBuy.customer = {};
+  window.InstaBuy.customer.id = {{customer.id | json}};
+  window.InstaBuy.customer.email = {{customer.email | json}};
+  window.InstaBuy.customer.tags = {{customer.tags | json}};
+
+  var widgetCount = document.querySelectorAll('[data-instabuy]').length;
+  if(widgetCount > 0) {
+    window.InstaBuy = window.InstaBuy || {};
+    var scriptTag = document.createElement("script");
+    scriptTag.src="https://assets.useinstabuy.com/assets/instabuy-app.js";
+    document.head.appendChild(scriptTag);
+  }
+</script>
