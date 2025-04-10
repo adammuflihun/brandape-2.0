@@ -75,7 +75,7 @@
     "home_07": {
       "type": "home_07",
       "settings": {
-        "collection_collection": "",
+        "collection_collection": "domains-for-sale",
         "collection_collection_limit": 6
       }
     }
