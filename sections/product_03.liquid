@@ -1,0 +1,23 @@
+<div class="ba_container-large relative_1"><div class="padding-section-large"><div class="faq4_component"><div class="margin-bottom margin-xxlarge"><div class="text-align-center"><div class="max-width-large align-center"><div class="margin-bottom margin-small"><h2 class="heading-style-h2-2">Frequently Asked <span class="span_gradient">Questions</span></h2></div></div></div></div><div class="max-width-large align-center"><div class="w-layout-grid faq4_list">{% for block in section.blocks %}
+    {% if block.type == "faq" %}
+                    <div li-block="faq" class="faq4_accordion">
+                                    
+                                    <div data-w-id="ea902277-607c-e7b9-1fb8-b75ff96aac99" class="faq4_question"><div class="title_faq">
+{{ block.settings.text_title }}
+</div>
+<div class="faq4_icon-wrappper"><div class="icon-plus w-embed"><svg width="100%" height="100%" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.3333 15.667V16.3336C25.3333 16.7018 25.0349 17.0003 24.6667 17.0003H17V24.667C17 25.0351 16.7015 25.3336 16.3333 25.3336H15.6667C15.2985 25.3336 15 25.0351 15 24.667V17.0003H7.3333C6.96511 17.0003 6.66663 16.7018 6.66663 16.3336V15.667C6.66663 15.2988 6.96511 15.0003 7.3333 15.0003H15V7.33365C15 6.96546 15.2985 6.66699 15.6667 6.66699H16.3333C16.7015 6.66699 17 6.96546 17 7.33365V15.0003H24.6667C25.0349 15.0003 25.3333 15.2988 25.3333 15.667Z" fill="currentColor"></path></svg></div></div></div>
+                                    
+                                    <div style="width:100%;height:0px" class="faq4_answer"><div class="margin-bottom margin-small"><p class="text-size-regular-3">
+{{ block.settings.text_content }}
+</p>
+</div></div>
+                                    
+                                    <div class="divider_gradient is_faq"></div>
+                                    
+                                    <div class="wrap_divider_gradient"></div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div></div></div></div><img sizes="(max-width: 1920px) 100vw, 1920px" srcset="{{ 'background-1_1background-1.webp' | asset_url }} 500w, {{ 'background-1_1background-1.webp' | asset_url }} 800w, {{ 'background-1_1background-1.webp' | asset_url }} 1080w, {{ 'background-1_1background-1.webp' | asset_url }} 1600w, {{ 'background-1_1background-1.webp' | asset_url }} 1920w" alt="" src="{{ 'background-1_1background-1.webp' | asset_url }}" loading="lazy" class="img_section_faq4">
+<div class="overlay_section_faq4"></div> {% schema %} {"tag":"section","name":"Product 03","class":"section_faq4","blocks":[{"name":"faq","type":"faq","settings":[{"id":"text_title","type":"text","label":"Title","default":"What am I purchasing when I buy a domain from DomainSales.co.uk?"},{"id":"text_content","type":"text","label":"content","default":"Yes! Once the transfer is complete and the domain is in your account, you can start using it immediately. You can:\u2028\u2028<br\/><br\/>Set up hosting for a website.Redirect the domain to another URL.Use the domain to create email accounts (if supported by your registrar).Please note that DomainSales.co.uk does not provide hosting, email, or website services. You will need to arrange these separately with your chosen provider."}]},{"type":"@app"}],"presets":[{"name":"Product 03","category":"Liquify","blocks":[{"type":"faq"}]}]} {% endschema %}

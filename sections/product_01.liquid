@@ -1,0 +1,8 @@
+<div class="ba_container-large is_relative"><div class="text_allxap">Your Brand Starts Here</div><h1 li-object:text="product.title" class="heading-style-h2-2">
+{{ product.title }}
+</h1><div class="product-item_tag_list-2 padding-vertical padding-medium">{% unless product.available %}    <div li-unless="product.available" class="ba_priduct_tag_soldout">
+    Not in Stock    </div>
+{% endunless %}{% if product.available %}    <div li-if="product.available" class="ba_priduct_tag_soldout is-red">
+    for sale    </div>
+{% endif %}</div></div><img sizes="(max-width: 1919px) 100vw, 1919px" srcset="{{ 'bg-header-2_1bg-header-2.webp' | asset_url }} 500w, {{ 'bg-header-2_1bg-header-2.webp' | asset_url }} 800w, {{ 'bg-header-2_1bg-header-2.webp' | asset_url }} 1080w, {{ 'bg-header-2_1bg-header-2.webp' | asset_url }} 1600w, {{ 'bg-header-2_1bg-header-2.webp' | asset_url }} 1919w" alt="" src="{{ 'bg-header-2_1bg-header-2.webp' | asset_url }}" loading="lazy" class="img_header_product">
+<div class="top_overflow_header_product"></div><div class="overflow_header_product"></div> {% schema %} {"tag":"div","name":"Product 01","class":"ba_collection_01","presets":[{"name":"Product 01","category":"Liquify","blocks":[]}]} {% endschema %}

@@ -1,0 +1,37 @@
+<div class="ba_container-large is_relative"><div class="padding-section-large"><div class="testimonial9_component"><div class="margin-xxlarge wrap-title_review"><div class="text-align-center"><div class="align-center wrapper-stellar"><div class="margin-bottom margin-small"><h2 class="heading-style-h2-2"><span class="span_gradient">Stellar Reviews<br>
+</span>from BrandApe Customers<span class="span_gradient">‍</span></h2></div><div class="divider_gradient"></div></div></div></div><div class="testimonial9_slider swiper2"><div class="swiper-wrapper">{% for block in section.blocks %}
+    {% if block.type == "slider" %}
+                    <div li-block="slider" class="swiper-slide">
+                                    
+                                    <div class="testimonial9_content"><div class="testimonial9_client-image-wrapper">{% if block.settings.image_bild %}
+<img loading="lazy" alt="{{ block.settings.image_bild.alt }}" src="{{ block.settings.image_bild | img_url: 'master' }}" class="testimonial9_client-image">
+{% else %}
+ {{  'detailed-apparel-1' | placeholder_svg_tag: 'testimonial9_client-image'  }} 
+{% endif %}
+<img loading="lazy" src="{{ 'cricle.svg' | asset_url }}" alt="" class="img_cricle_testimonial">
+</div><div class="wrap_testimonial9_content"><div class="testimonial9_client"><div class="title_testimonial9_client">
+{{ block.settings.text_name }}
+</div>
+<div class="ba_text-size-regular">
+{{ block.settings.text_job_title }}
+</div>
+</div></div><h3 class="content_text">
+{{ block.settings.text_testimonial_body }}
+</h3>
+</div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div><div class="wrapper_swiper_button_2"><a data-w-id="2e11e185-e61e-aeb3-1de6-03058384cf5c" href="#" class="ba_button c-07 is_cta nav_search swiper-arrow_left_2 w-inline-block"><div class="btn-txt-container is_rotate"><div style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="slider-arrow-icon_default w-embed"><svg width="100%" height="100%" viewbox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5303 6.53033C22.8232 6.23744 22.8232 5.76256 22.5303 5.46967L17.7574 0.6967C17.4645 0.403806 16.9896 0.403806 16.6967 0.6967C16.4038 0.989593 16.4038 1.46447 16.6967 1.75736L20.9393 6L16.6967 10.2426C16.4038 10.5355 16.4038 11.0104 16.6967 11.3033C16.9896 11.5962 17.4645 11.5962 17.7574 11.3033L22.5303 6.53033ZM6.55671e-08 6.75L22 6.75L22 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="white"></path></svg></div><div class="slider-arrow-icon_default is_dark w-embed"><svg width="100%" height="100%" viewbox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5303 6.53033C22.8232 6.23744 22.8232 5.76256 22.5303 5.46967L17.7574 0.6967C17.4645 0.403806 16.9896 0.403806 16.6967 0.6967C16.4038 0.989593 16.4038 1.46447 16.6967 1.75736L20.9393 6L16.6967 10.2426C16.4038 10.5355 16.4038 11.0104 16.6967 11.3033C16.9896 11.5962 17.4645 11.5962 17.7574 11.3033L22.5303 6.53033ZM6.55671e-08 6.75L22 6.75L22 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="currentcolor"></path></svg></div></div><div class="wrap_is_cta"><div style="width:0%" class="is_cta_white"></div></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div></a><a data-w-id="2e11e185-e61e-aeb3-1de6-03058384cf66" href="#" class="ba_button c-07 is_cta nav_search swiper-arrow_right_2 w-inline-block"><div class="btn-txt-container"><div style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="slider-arrow-icon_default w-embed"><svg width="100%" height="100%" viewbox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5303 6.53033C22.8232 6.23744 22.8232 5.76256 22.5303 5.46967L17.7574 0.6967C17.4645 0.403806 16.9896 0.403806 16.6967 0.6967C16.4038 0.989593 16.4038 1.46447 16.6967 1.75736L20.9393 6L16.6967 10.2426C16.4038 10.5355 16.4038 11.0104 16.6967 11.3033C16.9896 11.5962 17.4645 11.5962 17.7574 11.3033L22.5303 6.53033ZM6.55671e-08 6.75L22 6.75L22 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="white"></path></svg></div><div class="slider-arrow-icon_default is_dark w-embed"><svg width="100%" height="100%" viewbox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5303 6.53033C22.8232 6.23744 22.8232 5.76256 22.5303 5.46967L17.7574 0.6967C17.4645 0.403806 16.9896 0.403806 16.6967 0.6967C16.4038 0.989593 16.4038 1.46447 16.6967 1.75736L20.9393 6L16.6967 10.2426C16.4038 10.5355 16.4038 11.0104 16.6967 11.3033C16.9896 11.5962 17.4645 11.5962 17.7574 11.3033L22.5303 6.53033ZM6.55671e-08 6.75L22 6.75L22 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="currentcolor"></path></svg></div></div><div class="wrap_is_cta"><div style="width:0%" class="is_cta_white"></div></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div></a></div></div></div></div></div><img loading="lazy" src="{{ 'stone-1_1stone-1.webp' | asset_url }}" alt="" class="stone_section_testimonial9 is-2">
+{% for block in section.blocks %}
+    {% if block.type == "video" %}
+                    <div li-block="video" class="video_background">
+                                    
+                                    <div class="wrapper_video video_footer"><video width="100%" height="auto" alt="{{block.settings.video.alt}}" autoplay="" loop="" muted="">{% for video_source in block.settings.video.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video><div class="hide w-embed"></div>
+</div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+ {% schema %} {"tag":"section","name":"home 06","class":"ba_home_06","blocks":[{"name":"slider","type":"slider","settings":[{"id":"image_bild","type":"image_picker","label":"Bild"},{"id":"text_name","type":"text","label":"Name","default":"James Carter"},{"id":"text_job_title","type":"text","label":"job title","default":"Founder of Something.com"},{"id":"text_testimonial_body","type":"text","label":"Testimonial body","default":"Fantastic marketplace with competitive pricing\u2014found the perfect domain for my startup within minutes!"}]},{"name":"video","type":"video","settings":[{"type":"header","content":"video"},{"type":"video","id":"video","label":"Upload Video"}]},{"type":"@app"}],"presets":[{"name":"home 06","category":"Liquify","blocks":[{"type":"slider"},{"type":"video"}]}]} {% endschema %}

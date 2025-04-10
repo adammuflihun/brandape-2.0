@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "collection_01": {
+            "type": "collection_01"
+        },
+        "collection_02": {
+            "type": "collection_02"
+        }
+    },
+    "layout": "collection",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "collection_01",
+        "collection_02"
+    ]
+}
