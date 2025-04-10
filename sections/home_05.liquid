@@ -1,7 +1,7 @@
 <div class="ba_container-large relative_1"><div class="mehr_component"><div class="collections_list-wrapper w-dyn-list"><div role="list" class="collections_grid-2 is_domain_home w-dyn-items">{% for link in linklists.domain-search-category.links %}    <div li-for="link in linklists.domain-search-category.links" role="listitem" class="collections_list-item w-dyn-item">
                                     
-                            <a li-object:href="collection.url" href="{{ collection.url }}" class="mehr_image-link-2 w-inline-block"><div class="mehr_image-wrapper-2"><div class="line_mehr_image-wrapper"></div><h3 li-object="link.title" class="heading-style-h3-3 z-index-1 text-color-white is_text_domain">{{ link.title }}</h3><img li-object:src="collection.image | img_url: 'master'" loading="lazy" alt="" src="{{ collection.image | img_url: 'master' }}" class="mehr_image-2">
-<div class="mehr_overlay-2"></div></div></a>
+                            <a li-object:href="link.url" href="{{ link.url }}" class="ba_link_collection_custom w-inline-block"><div class="ba_wrapper_collection"><div class="ba_line_custom"></div><h3 li-object="link.title" class="heading-style-h3-3 z-index-1 text-color-white is_text_domain">{{ link.title }}</h3><img li-object:src="link.image | img_url: 'master'" loading="lazy" alt="" src="{{ link.image | img_url: 'master' }}" class="ba_img_custom">
+<div class="ba_img_overlay"></div></div></a>
                             
                         </div>
 {% endfor %}</div><div class="hide w-dyn-empty"><div>No items found.</div></div></div></div></div><div class="floater_mehr"></div><div class="floater_mehr is_2"></div><div class="floater_mehr is-3"></div> {% schema %} {"tag":"section","name":"home 05","class":"ba_home_05","presets":[{"name":"home 05","category":"Liquify","blocks":[]}]} {% endschema %}
