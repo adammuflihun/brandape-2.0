@@ -8,5 +8,48 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {}
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {}
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "video_Aqe49E": {
+            "type": "video",
+            "settings": {
+              "video": "shopify://files/videos/Keyflow Work Footer.webm"
+            }
+          }
+        },
+        "block_order": [
+          "video_Aqe49E"
+        ],
+        "settings": {
+          "url_about_us": "",
+          "url_get_in_touch": "",
+          "url_faqs": "",
+          "url_sell_domain": "",
+          "url_com": "",
+          "url_co_uk": "",
+          "url_uk": "",
+          "url_ai": "",
+          "url_brandable": "",
+          "url_fashion": "",
+          "url_gambling": "",
+          "url_retail": "",
+          "url_lease_to_own": "",
+          "url_cookie_policy": "",
+          "url_refund": "",
+          "url_privacy": "",
+          "url_facebook": "",
+          "url_x": "",
+          "url_ig": ""
+        }
+      }
+    },
+    "content_for_index": []
+  }
 }
