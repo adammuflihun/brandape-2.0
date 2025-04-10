@@ -1,0 +1,12 @@
+<div class="ba_container-large is_relative"><div class="product_component"><div id="w-node-_2e11e185-e61e-aeb3-1de6-03058384cef6-f2238cbe" class="product_heading-wrapper-2"><div class="product_heading-2"><h2 class="heading-style-h2-2 align-center text-align-center"><span class="span_gradient">Featured </span>Domains</h2><div class="divider_gradient"></div><p class="ba_text-size-regular sub-text">Browse Some of Our Exclusive Domains</p></div><div class="product_button-row hide-mobile-landscape hide"><a href="{{ section.settings.url_button_link }}" class="ba_button w-button"> {{ section.settings.text_button_text }} </a>
+</div></div><div class="product_list-wrapper w-dyn-list"><div role="list" class="product_list-2 w-dyn-items">{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
+<div role="listitem" class="product_list-item w-dyn-item">
+    
+    {% render 'product_item', product: product %}
+
+    
+</div>
+{% endfor %}
+</div><div class="hide w-dyn-empty"><div>No items found.</div></div></div></div><div class="button-feature-domain"><a data-w-id="4f34ae14-54e0-b12b-6087-32a73437d104" href="{{ section.settings.url_button }}" class="ba_button c-07 is_cta w-inline-block"> <div class="btn-txt-container"><div class="btn-txt is_caps">browse our domain</div><div class="btn-txt is_color is_caps">browse our domain</div></div><div class="wrap_is_cta"><div class="is_cta_gradient"></div><div class="is_cta_white"></div></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div> </a>
+</div></div><img loading="lazy" src="{{ 'gradient-object.svg' | asset_url }}" alt="" class="img_blur_section_product">
+ {% schema %} {"tag":"section","name":"home 03","class":"ba_home_03","settings":[{"id":"url_button_link","type":"url","label":"Button-Link"},{"id":"text_button_text","type":"text","label":"Button-Text","default":"All products"},{"id":"collection_collection","type":"collection","label":"Collection"},{"type":"range","id":"collection_collection_limit","min":1,"max":99,"step":1,"label":"Limit: Collection","default":6},{"id":"url_button","type":"url","label":"Button"}],"presets":[{"name":"home 03","category":"Liquify","blocks":[]}]} {% endschema %}

@@ -1,0 +1,13 @@
+<div class="ba_container-large relative_1">{% for block in section.blocks %}
+    {% if block.type == "title" %}
+                    <div li-block="title" class="wrap_wrap_title_category">
+                                    
+                                    <div class="wrap_title_category"><h2 class="heading-style-h2-2">Domains by <span class="span_gradient">Category</span></h2><div class="divider_gradient is_auto"></div><p class="ba_text-size-regular">Explore domain names tailored to your industry or interests to find the perfect match.</p></div>
+                                    
+                                    <a href="{{ block.settings.url_button }}" class="ba_button c-07 is_cta w-inline-block"> <div class="btn-txt-container"><div class="btn-txt is_caps">View all categories</div><div class="btn-txt is_color is_caps">View all categories</div></div><div class="wrap_is_cta"><div class="is_cta_gradient"></div><div class="is_cta_white"></div></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div> </a>
+
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div> {% schema %} {"tag":"section","name":"home 04","class":"ba_home_04 background-color-grey is_top_domain","blocks":[{"name":"title","type":"title","settings":[{"id":"url_button","type":"url","label":"Button"}]},{"type":"@app"}],"presets":[{"name":"home 04","category":"Liquify","blocks":[{"type":"title"}]}]} {% endschema %}

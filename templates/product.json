@@ -1,0 +1,20 @@
+{
+    "sections": {
+        "product_01": {
+            "type": "product_01"
+        },
+        "product_02": {
+            "type": "product_02"
+        },
+        "product_03": {
+            "type": "product_03"
+        }
+    },
+    "layout": "product",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "product_01",
+        "product_02",
+        "product_03"
+    ]
+}

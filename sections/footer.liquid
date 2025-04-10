@@ -1,0 +1,80 @@
+<footer class="ba_section_footer"><div class="ba_container-large is_relative"><div class="footer_main-wrapper"><div class="ba_footer_link-grid"><div class="footer_link-column-2"><div class="text_allxap">Your Brand Starts Here</div><h2 class="heading-style-h2-2 text-color-white is_footer_subscribe">Sign Up for Exclusive Out-of-Space Updates</h2><div class="footer_link-list-2"><div class="footer_form-block w-form">{% form 'customer', return_to: '?page=...&customer_posted=true', class: 'ba_footer_form' %}
+<div class="form_field-wrapper-2"><label for="Newsletter" class="form_hidden-label">Your E-Mail-Address</label><input class="nav_search nav_border nav_box_search is_newsletter w-input" maxlength="256" name="contact[email]" data-name="Email 6" placeholder="Enter your email" type="email" id="Newsletter" required="">
+</div><div li-object="form.errors | default_errors" class="text-size-regular-3 text-color-red hide">{{ form.errors | default_errors }}</div><div id="w-node-_754ea3aa-60d7-b5eb-65fe-64f597ebdb17-cf39daf1" class="hide w-embed"><input type="hidden" name="contact[accepts_marketing]" value="false">
+</div><input type="submit" data-wait="" id="subscribe_button" class="ba_subscribe_button hide w-node-_754ea3aa-60d7-b5eb-65fe-64f597ebdb18-cf39daf1 w-button" value="Subscribe to Newsletter">
+<a data-w-id="754ea3aa-60d7-b5eb-65fe-64f597ebdb19" href="#" class="ba_button_main c-07 is_cta is_subscribe w-inline-block"><div class="btn-txt-container"><div class="btn-txt is_caps">Sign up</div><div class="btn-txt is_color is_caps">Sign up</div></div><div class="wrap_is_cta"><div class="is_cta_gradient"></div><div class="is_cta_white"></div></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div></a>{% endform %}
+{% if request.params.customer_posted == 'true' %}    <div li-if="request.params.customer_posted == 'true'" class="ba_success_message w-form-done">
+    <div>Thank you! for joining our newsletter</div>    </div>
+{% endif %}<div class="hide w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div></div><div class="footer_link_grid"><div class="ba_footer_link-grid"><div class="wrap_footer_link-grid"><div class="title_footer_link-grid">Company</div><div class="divider_gradient is_smaller"></div><a href="{{ section.settings.url_about_us }}" class="link_footer_link-grid w-inline-block"> <div>About us </div> </a>
+<a href="{{ section.settings.url_get_in_touch }}" class="link_footer_link-grid w-inline-block"> <div>Get in Touch </div> </a>
+<a href="{{ section.settings.url_faqs }}" class="link_footer_link-grid w-inline-block"> <div>FAQS </div> </a>
+<a href="{{ section.settings.url_sell_domain }}" class="link_footer_link-grid w-inline-block"> <div>Sell Your Domain</div> </a>
+</div></div><div class="ba_footer_link-grid"><div class="wrap_footer_link-grid"><div class="title_footer_link-grid">Popular TLD's</div><div class="divider_gradient is_smaller"></div><a href="{{ section.settings.url_com }}" class="link_footer_link-grid w-inline-block"> <div>.com </div> </a>
+<a href="{{ section.settings.url_co_uk }}" class="link_footer_link-grid w-inline-block"> <div>.co.uk </div> </a>
+<a href="{{ section.settings.url_uk }}" class="link_footer_link-grid w-inline-block"> <div>.uk </div> </a>
+<a href="{{ section.settings.url_ai }}" class="link_footer_link-grid w-inline-block"> <div>.ai</div> </a>
+</div></div><div class="ba_footer_link-grid"><div class="wrap_footer_link-grid"><div class="title_footer_link-grid">Top Categories</div><div class="divider_gradient is_smaller"></div><a href="{{ section.settings.url_brandable }}" class="link_footer_link-grid w-inline-block"> <div>Brandable</div> </a>
+<a href="{{ section.settings.url_fashion }}" class="link_footer_link-grid w-inline-block"> <div>Fashion</div> </a>
+<a href="{{ section.settings.url_gambling }}" class="link_footer_link-grid w-inline-block"> <div>Gambling</div> </a>
+<a href="{{ section.settings.url_retail }}" class="link_footer_link-grid w-inline-block"> <div>Retail</div> </a>
+</div></div><div class="ba_footer_link-grid"><div class="wrap_footer_link-grid"><div class="title_footer_link-grid">Legal</div><div class="divider_gradient is_smaller"></div><a href="{{ section.settings.url_lease_to_own }}" class="link_footer_link-grid w-inline-block"> <div>Lease To Own</div> </a>
+<a href="{{ section.settings.url_cookie_policy }}" class="link_footer_link-grid w-inline-block"> <div>Cookie Policy</div> </a>
+<a href="{{ section.settings.url_refund }}" class="link_footer_link-grid w-inline-block"> <div>Refund Policy</div> </a>
+<a href="{{ section.settings.url_privacy }}" class="link_footer_link-grid w-inline-block"> <div>Privacy Policy</div> </a>
+</div></div></div></div><div class="footer_divider"></div><div class="footer-bottom"><div class="ba_container-large"><div class="footer_icon-grid-2"><div id="w-node-_754ea3aa-60d7-b5eb-65fe-64f597ebdb75-cf39daf1" class="footer_icon-block is_socmed"><div class="text-size-regular-3 text-color-white">© 2025, Brand Ape. All Rights Reserved.</div><div class="wrap_is_socmed"><a href="{{ section.settings.url_facebook }}" class="w-inline-block"> <div class="social_media_icon w-embed"><svg width="100%" height="100%" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.7192 26.1704V16.4266H21.0583L21.5359 12.6249H17.7192V10.2481C17.7192 9.17866 18.0774 8.34719 19.6269 8.34719H21.654V4.90099C21.1777 4.90099 19.9851 4.78202 18.6731 4.78202C18.0094 4.73817 17.344 4.83818 16.7228 5.07514C16.1017 5.31211 15.5394 5.6804 15.0748 6.15468C14.6102 6.62895 14.2542 7.19792 14.0315 7.82243C13.8087 8.44693 13.7244 9.11211 13.7844 9.77219V12.6249H10.4453V16.4266H13.7844V26.1704H17.7192Z" fill="currentcolor"></path></svg></div> </a>
+<a href="{{ section.settings.url_x }}" class="w-inline-block"> <div class="social_media_icon w-embed"><svg width="100%" height="100%" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.8268 5.90625H25.1536L17.8855 14.0752L26.4358 25.1912H19.74L14.4963 18.4494L8.49645 25.1912H5.16765L12.9416 16.4536L4.74023 5.90625H11.604L16.3438 12.0685L21.8268 5.90625ZM20.6592 23.233H22.5026L10.6034 7.76156H8.62518L20.6592 23.233Z" fill="currentcolor"></path></svg></div> </a>
+<a href="{{ section.settings.url_ig }}" class="w-inline-block"> <div class="social_media_icon is_ig w-embed"><svg width="100%" height="100%" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.3149 5.90625H11.0966C8.30574 5.90625 6.03516 8.17694 6.03516 10.9678V19.1861C6.03516 21.9771 8.30574 24.2477 11.0966 24.2477H19.3149C22.106 24.2477 24.3766 21.977 24.3766 19.1861V10.9678C24.3767 8.17694 22.106 5.90625 19.3149 5.90625ZM22.7494 19.1861C22.7494 21.0798 21.2087 22.6204 19.315 22.6204H11.0966C9.20305 22.6205 7.6625 21.0798 7.6625 19.1861V10.9678C7.6625 9.07425 9.20305 7.53359 11.0966 7.53359H19.3149C21.2086 7.53359 22.7493 9.07425 22.7493 10.9678V19.1861H22.7494ZM15.2055 10.3509C12.5995 10.3509 10.4794 12.471 10.4794 15.0771C10.4794 17.683 12.5995 19.803 15.2055 19.803C17.8116 19.803 19.9317 17.683 19.9317 15.0771C19.9317 12.471 17.8116 10.3509 15.2055 10.3509ZM15.2055 18.1755C13.4969 18.1755 12.1067 16.7855 12.1067 15.0769C12.1067 13.3682 13.4968 11.9782 15.2055 11.9782C16.9142 11.9782 18.3043 13.3682 18.3043 15.0769C18.3043 16.7855 16.9141 18.1755 15.2055 18.1755ZM19.2885 9.32071C19.51 9.0983 19.818 8.97137 20.1315 8.97137C20.4461 8.97137 20.7542 9.0983 20.9755 9.32071C21.1979 9.54203 21.3249 9.85014 21.3249 10.1648C21.3249 10.4783 21.1979 10.7864 20.9755 11.0088C20.7531 11.2301 20.4461 11.3581 20.1315 11.3581C19.818 11.3581 19.5098 11.2301 19.2885 11.0088C19.0661 10.7864 18.9381 10.4784 18.9381 10.1648C18.9381 9.85014 19.066 9.54203 19.2885 9.32071Z" fill="currentcolor"></path></svg></div> </a>
+</div></div><div class="footer_icon-block hide"><div class="text-size-regular-3 text-color-white">Delivery</div><div class="footer_icon-row">{% for block in section.blocks %}
+    {% if block.type == "lieferung-icon" %}
+                    <div li-block="Lieferung-icon" class="footer_icon-item">
+                                    <img loading="lazy" alt="{{ block.settings.image_icon.alt }}" src="{{ block.settings.image_icon | img_url: 'master' }}" class="footer_shipping-icon">
+
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div><div id="w-node-_754ea3aa-60d7-b5eb-65fe-64f597ebdb85-cf39daf1" class="wrap_footer_icon-block"><div class="footer_icon-block"><div class="text-size-regular-3 text-color-white hide">Payment Method</div><ul role="list" class="footer_payment-list w-list-unstyled">{% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
+                                    
+                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
+                            
+                        </li>
+{% endfor %}</ul></div>{% if localization.available_languages.size > 1 %}    <localization-form li-if="localization.available_languages.size > 1" class="li-lang_wrapper">
+    {% form 'localization', class: 'li-lang_form' %}
+<div data-delay="500" data-hover="true" class="li-lang_dropdown w-dropdown"><div lang="{{ language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle"><div li-object="localization.language.endonym_name | capitalize">{{ localization.language.endonym_name | capitalize }}</div><img loading="lazy" src="{{ 'chevron-down.2-1.svg' | asset_url }}" alt="" class="li-lang_dd-toggle-icon">
+</div><nav li-for:inside="language in localization.available_languages" class="li-lang_dd-list w-dropdown-list">
+        {% for language in localization.available_languages %}                            
+                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="li-lang_dd-list-item">
+    <a href="#" li-object="language.endonym_name | capitalize" lang="{{ language.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>    </div>
+{% endunless %}
+                            
+                    {% endfor %}    </nav>
+</div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
+{% endform %}
+<div class="li-lang_script w-embed w-script"><script>class LocalizationForm extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('input[name="language_code"], input[name="country_code"]');
+    this.querySelectorAll('a').forEach(item =>
+      item.addEventListener('click', this.onItemClick.bind(this))
+    );
+  }
+  onItemClick(event) {
+    event.preventDefault();
+    const form = this.querySelector('form');
+    this.input.value = event.currentTarget.dataset.value;
+    if (form) form.submit();
+  }
+}
+customElements.define('localization-form', LocalizationForm);
+</script></div>    </localization-form>
+{% endif %}</div></div></div></div>{% for block in section.blocks %}
+    {% if block.type == "video" %}
+                    <div li-block="video" class="video_background">
+                                    
+                                    <div class="wrapper_video video_footer"><video width="100%" height="auto" alt="{{block.settings.video.alt}}" autoplay="" loop="" muted="">{% for video_source in block.settings.video.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video><div class="hide w-embed"></div>
+</div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+<img sizes="(max-width: 1278px) 100vw, 1278px" srcset="{{ 'ape-footer-1_1ape-footer-1.webp' | asset_url }} 500w, {{ 'ape-footer-1_1ape-footer-1.webp' | asset_url }} 800w, {{ 'ape-footer-1_1ape-footer-1.webp' | asset_url }} 1080w, {{ 'ape-footer-1_1ape-footer-1.webp' | asset_url }} 1278w" alt="" src="{{ 'ape-footer-1_1ape-footer-1.webp' | asset_url }}" loading="lazy" class="footer_monkey">
+</footer> {% schema %} {"tag":"footer","name":"footer","blocks":[{"name":"Lieferung-icon","type":"lieferung-icon","settings":[{"id":"image_icon","type":"image_picker","label":"icon"}]},{"name":"video","type":"video","settings":[{"type":"header","content":"video"},{"type":"video","id":"video","label":"Upload Video"}]},{"type":"@app"}],"settings":[{"id":"url_about_us","type":"url","label":"about us"},{"id":"url_get_in_touch","type":"url","label":"get in touch"},{"id":"url_faqs","type":"url","label":"faqs"},{"id":"url_sell_domain","type":"url","label":"sell domain"},{"id":"url_com","type":"url","label":".com"},{"id":"url_co_uk","type":"url","label":".co uk"},{"id":"url_uk","type":"url","label":"uk"},{"id":"url_ai","type":"url","label":"ai"},{"id":"url_brandable","type":"url","label":"brandable"},{"id":"url_fashion","type":"url","label":"fashion"},{"id":"url_gambling","type":"url","label":"gambling"},{"id":"url_retail","type":"url","label":"retail"},{"id":"url_lease_to_own","type":"url","label":"lease to own"},{"id":"url_cookie_policy","type":"url","label":"cookie policy"},{"id":"url_refund","type":"url","label":"refund"},{"id":"url_privacy","type":"url","label":"privacy"},{"id":"url_facebook","type":"url","label":"facebook"},{"id":"url_x","type":"url","label":"x"},{"id":"url_ig","type":"url","label":"ig"}],"presets":[{"name":"footer","category":"Liquify","blocks":[{"type":"lieferung-icon"},{"type":"video"}]}]} {% endschema %}
