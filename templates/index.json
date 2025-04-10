@@ -1,36 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "home_01": {
-            "type": "home_01"
-        },
-        "home_02": {
-            "type": "home_02"
-        },
-        "home_03": {
-            "type": "home_03"
-        },
-        "home_04": {
-            "type": "home_04"
-        },
-        "home_05": {
-            "type": "home_05"
-        },
-        "home_06": {
-            "type": "home_06"
-        },
-        "home_07": {
-            "type": "home_07"
-        }
+  "sections": {
+    "home_01": {
+      "type": "home_01",
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "home_01",
-        "home_02",
-        "home_03",
-        "home_04",
-        "home_05",
-        "home_06",
-        "home_07"
-    ]
+    "home_02": {
+      "type": "home_02",
+      "blocks": {
+        "video_4VjzdQ": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/about-vp9-chrome.webm"
+          }
+        }
+      },
+      "block_order": [
+        "video_4VjzdQ"
+      ],
+      "settings": {
+        "url_button": ""
+      }
+    },
+    "home_03": {
+      "type": "home_03",
+      "settings": {
+        "url_button_link": "",
+        "text_button_text": "",
+        "collection_collection": "domains-for-sale",
+        "collection_collection_limit": 6,
+        "url_button": ""
+      }
+    },
+    "home_04": {
+      "type": "home_04",
+      "settings": {}
+    },
+    "home_05": {
+      "type": "home_05",
+      "settings": {}
+    },
+    "home_06": {
+      "type": "home_06",
+      "blocks": {
+        "video_C3Lx8V": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/testimonials-vp9-chrome.webm"
+          }
+        },
+        "slider_WEpQLF": {
+          "type": "slider",
+          "settings": {
+            "text_name": "James Carter",
+            "text_job_title": "Founder of Something.com",
+            "text_testimonial_body": "Fantastic marketplace with competitive pricing—found the perfect domain for my startup within minutes!"
+          }
+        }
+      },
+      "block_order": [
+        "video_C3Lx8V",
+        "slider_WEpQLF"
+      ],
+      "settings": {}
+    },
+    "home_07": {
+      "type": "home_07",
+      "settings": {
+        "collection_collection": "",
+        "collection_collection_limit": 6
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "home_01",
+    "home_02",
+    "home_03",
+    "home_04",
+    "home_05",
+    "home_06",
+    "home_07"
+  ]
 }
